@@ -10,7 +10,6 @@ body {
 
 .content {
     width: 70%;
-    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,19 +19,26 @@ body {
 
 .comments {
     width: 100%;
-    height: 65%;
-    border: 1px solid grey;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
-.item {
-    border-bottom: 1px solid lightgray;
+.newComment {
     font-size: 14px;
     padding: 1%;
 }
 
 .add-comment {
     width: 100%;
-    height: 35%;
+    height: max-content;
+}
+
+.add-form {
+    width: 100%;
+    height: max-content;
     border: 1px solid grey;
     display: flex;
     flex-direction: column;
@@ -63,6 +69,8 @@ body {
     width: 90%;
     height: 40px;
     border-radius: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .button-send:hover {
@@ -87,4 +95,39 @@ body {
 .button-clear:hover {
     background-color: cyan;
     color: black;
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+label {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.about-user {
+    width: 96%;
+    padding-bottom: 1%;
+}
+
+.login {
+    width: 30%;
+    height: 30px;
+}
+
+.photo {
+    width: 68%;
+    height: 30px;
 }
